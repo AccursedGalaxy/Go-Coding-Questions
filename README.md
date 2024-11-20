@@ -56,8 +56,26 @@ cd go-programming-challenges
    - Case-insensitive comparison
    - Reference: `internal/questions/palindrome.go`
 
+6. **Binary Tree Operations**
+   - Tree traversal algorithms
+   - Recursive problem solving
+   - Basic tree operations
+   - Reference: `internal/questions/binary_tree.go`
+
+7. **Channel Communication**
+   - Goroutine coordination
+   - Basic concurrency patterns
+   - Channel operations
+   - Reference: `internal/questions/channels.go`
+
+8. **Custom Sort Implementation**
+   - Interface implementation
+   - Sorting algorithm logic
+   - Type assertions
+   - Reference: `internal/questions/custom_sort.go`
+
 ### Advanced Level
-6. **Error Handling** (Challenge 7)
+9. **Error Handling** (Challenge 7)
    - Custom error types
    - Multiple return values
    - Edge case handling
