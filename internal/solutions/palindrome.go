@@ -29,7 +29,7 @@ func IsPalindrome(s string) bool {
     // Create a slice to store cleaned characters
     // Using rune type to properly handle Unicode characters
     cleaned := []rune{}
-    
+
     // First pass: clean the string
     // Iterate through each character (rune) in the input string
     for _, char := range s {
@@ -46,7 +46,7 @@ func IsPalindrome(s string) bool {
     // Two-pointer technique for palindrome checking
     // left starts from the beginning, right starts from the end
     left, right := 0, len(cleaned)-1
-    
+
     // Continue checking while the pointers haven't met in the middle
     for left < right {
         // If characters at left and right positions don't match,
@@ -58,8 +58,8 @@ func IsPalindrome(s string) bool {
         left++
         right--
     }
-    
+
     // If we've made it through the loop, all characters matched
     // Therefore, the string is a palindrome
     return true
-} 
+}

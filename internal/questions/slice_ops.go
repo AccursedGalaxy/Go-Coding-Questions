@@ -15,4 +15,4 @@ Output: []int{1, 2, 3, 4, 5, 6}, map[int]int{2: 3}  // 2 appeared 3 times
 
 func CleanupSlice(numbers []int, maxOccurrences int) ([]int, map[int]int) {
     return nil, nil // Placeholder
-} 
+}

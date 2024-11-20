@@ -71,4 +71,4 @@ func CleanupSlice(numbers []int, maxOccurrences int) ([]int, map[int]int) {
 
     // Return both the cleaned slice and the map of excessive numbers
     return result, excessive
-} 
+}

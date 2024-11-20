@@ -28,4 +28,4 @@ type BinaryTree struct {
 func (t *BinaryTree) Insert(value int)        {}
 func (t *BinaryTree) Find(value int) bool     { return false }
 func (t *BinaryTree) InOrderTraversal() []int { return nil }
-func (t *BinaryTree) Height() int             { return 0 } 
+func (t *BinaryTree) Height() int             { return 0 }

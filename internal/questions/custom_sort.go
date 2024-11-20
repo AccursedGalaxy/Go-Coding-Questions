@@ -29,4 +29,4 @@ type PersonCollection struct {
 
 func (pc *PersonCollection) Len() int           { return 0 }
 func (pc *PersonCollection) Less(i, j int) bool { return false }
-func (pc *PersonCollection) Swap(i, j int)      {} 
+func (pc *PersonCollection) Swap(i, j int)      {}

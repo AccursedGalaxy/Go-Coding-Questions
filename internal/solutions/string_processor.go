@@ -49,14 +49,14 @@ func ProcessString(input string) (string, []Pattern, error) {
     // ([^:{}]+) - captures one or more characters that aren't :, {, or }
     // \} - matches closing brace
     re := regexp.MustCompile(`\{([^:{}]+):([^:{}]+)\}`)
-    
+
     // Find all matches in the input string
     // FindAllStringSubmatch returns:
     // - Full match at index 0
     // - First capture group at index 1 (key)
     // - Second capture group at index 2 (value)
     matches := re.FindAllStringSubmatch(input, -1)
-    
+
     // If no matches found, return original string unchanged
     if matches == nil {
         return input, nil, nil
@@ -65,7 +65,7 @@ func ProcessString(input string) (string, []Pattern, error) {
     // Initialize slice to store extracted patterns
     // Pre-allocate with capacity equal to number of matches
     patterns := make([]Pattern, 0, len(matches))
-    
+
     // Keep track of the processed string
     result := input
 
@@ -103,4 +103,4 @@ func ProcessString(input string) (string, []Pattern, error) {
 
     // Return processed string, extracted patterns, and nil error
     return result, patterns, nil
-} 
+}

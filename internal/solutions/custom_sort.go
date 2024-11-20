@@ -120,7 +120,7 @@ func (pc *PersonCollection) Sort() error {
 	if !pc.isValidSortField() {
 		return fmt.Errorf("invalid sort field: %s", pc.SortField)
 	}
-	
+
 	// Perform the sort using the standard library
 	// sort.Sort uses our Len, Less, and Swap implementations
 	sort.Sort(pc)
@@ -150,7 +150,7 @@ func (pc *PersonCollection) isValidSortField() bool {
 		SortField: "age",
 		Ascending: true,
 	}
-	
+
 	err := collection.Sort()
 	if err != nil {
 		log.Fatal(err)

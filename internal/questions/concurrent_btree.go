@@ -54,4 +54,4 @@ func (t *ConcurrentBTree) RangeQuery(start, end interface{}) ([]interface{}, err
 // Snapshot creates a consistent point-in-time view of the tree
 func (t *ConcurrentBTree) Snapshot() (*ConcurrentBTree, error) {
     return nil, nil // Implement this
-} 
+}

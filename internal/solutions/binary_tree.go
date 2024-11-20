@@ -126,11 +126,11 @@ func (t *BinaryTree) heightRecursive(node *Node) int {
     if node == nil {
         return -1
     }
-    
+
     // Calculate height of left and right subtrees
     leftHeight := t.heightRecursive(node.Left)
     rightHeight := t.heightRecursive(node.Right)
-    
+
     // Return maximum height of subtrees plus 1 for current level
     return max(leftHeight, rightHeight) + 1
 }
@@ -141,4 +141,4 @@ func max(a, b int) int {
         return a
     }
     return b
-} 
+}

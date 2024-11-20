@@ -111,7 +111,7 @@ func processResults(ctx context.Context, squareChan <-chan int, errorChan <-chan
         case <-ctx.Done():
             // Operation timed out or was cancelled
             return fmt.Errorf("operation timed out: %w", ctx.Err())
-        
+
         case err, ok := <-errorChan:
             if !ok {
                 // Error channel closed, switch to nil to prevent further selects
@@ -119,7 +119,7 @@ func processResults(ctx context.Context, squareChan <-chan int, errorChan <-chan
                 continue
             }
             return fmt.Errorf("processing error: %w", err)
-        
+
         case square, ok := <-squareChan:
             if !ok {
                 // Square channel closed
@@ -134,4 +134,4 @@ func processResults(ctx context.Context, squareChan <-chan int, errorChan <-chan
             fmt.Printf("Square: %d\n", square)
         }
     }
-} 
+}

@@ -45,14 +45,14 @@ func (s *Stack) Pop() (int, error) {
     if s.IsEmpty() {
         return 0, errors.New("stack is empty")
     }
-    
+
     // Get the last element (top of stack)
     value := s.elements[len(s.elements)-1]
-    
+
     // Remove the last element by slicing
     // This maintains the underlying array but reduces the length
     s.elements = s.elements[:len(s.elements)-1]
-    
+
     return value, nil
 }
 
@@ -66,7 +66,7 @@ func (s *Stack) Peek() (int, error) {
     if s.IsEmpty() {
         return 0, errors.New("stack is empty")
     }
-    
+
     // Return the last element without modifying the stack
     return s.elements[len(s.elements)-1], nil
 }
@@ -77,4 +77,4 @@ func (s *Stack) Peek() (int, error) {
 // Time complexity: O(1)
 func (s *Stack) IsEmpty() bool {
     return len(s.elements) == 0
-} 
+}

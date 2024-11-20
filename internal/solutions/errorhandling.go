@@ -55,8 +55,8 @@ func Divide(a, b float64) (float64, error) {
             message:  "division by zero",
         }
     }
-    
+
     // If divisor is not zero, perform the division and return the result
     // No error is returned (nil) since the operation was successful
     return a / b, nil
-} 
+}

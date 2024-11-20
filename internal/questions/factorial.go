@@ -12,4 +12,4 @@ Output: Return the factorial of `n`.
 func Factorial(n int) int {
     // Implement factorial logic here
     return 0 // Placeholder
-} 
+}

@@ -23,4 +23,4 @@ type Pattern struct {
 
 func ProcessString(input string) (string, []Pattern, error) {
     return "", nil, nil // Placeholder
-} 
+}
