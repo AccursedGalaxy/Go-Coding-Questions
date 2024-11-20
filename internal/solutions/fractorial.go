@@ -1,8 +1,6 @@
-package fractorial
+package solutions
 
 /*
-Challenge 1: Basic Algorithm
-
 Problem: Write a function to calculate the factorial of a given positive integer `n`.
 
 Input: An integer `n` (0 ≤ n ≤ 20).
