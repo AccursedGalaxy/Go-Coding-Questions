@@ -81,6 +81,13 @@ cd go-programming-challenges
    - Edge case handling
    - Reference: `internal/questions/errorhandling.go`
 
+10. **Concurrent B-Tree** (Challenge 10)
+    - Lock-free algorithms
+    - Concurrent data structures
+    - Memory ordering and visibility
+    - Transaction support
+    - Reference: `internal/questions/concurrent_btree.go`
+
 ## Contributing
 
 Feel free to submit pull requests to add new challenges or improve existing ones. Please ensure your contributions follow the existing format and include both the question and solution files.
